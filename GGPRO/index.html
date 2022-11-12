@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+// Add the new slick-theme.css if you want the default styling
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
+   
     <title>Document</title>
 </head>
 <body>
@@ -79,9 +83,19 @@
     <section class="section__one">
         <div class="container">
             <div class="promotion">
-                <div class="poromotion__slider">
-                    <div class="poromotion__slider1">
+                <div class="promotion__slider">
+                    <div class="poromotion__slider_inner">
                         <p class="promotion__slider__title">смесители Raiber</p>
+                        <p class="promotion__slider__text">уже в наличие</p>
+                        <a href="#" class="promotion__slider__link">подробнее</a>
+                    </div>
+                    <div class="poromotion__slider_inner">
+                        <p class="promotion__slider__title">смесители Raiber2</p>
+                        <p class="promotion__slider__text">уже в наличие</p>
+                        <a href="#" class="promotion__slider__link">подробнее</a>
+                    </div>
+                    <div class="poromotion__slider_inner">
+                        <p class="promotion__slider__title">смесители Raiber3</p>
                         <p class="promotion__slider__text">уже в наличие</p>
                         <a href="#" class="promotion__slider__link">подробнее</a>
                     </div>
@@ -149,6 +163,65 @@
         </div>
     </section>
 
-    
+
+    <section class="section__two">
+        <div class="container">
+            <div class="section__two__title">
+                <a href="#">
+                    <h2 class="section__two__title-text">Коллекции плитки</h2>
+                </a>
+            </div>
+            <div class="tile_collection_items">
+                <div class="tile_collection__item1">
+                    <img src="images/shine.jpg" alt="">
+                    <a href="" class="collection-name nametop">Сияние</a>
+                    <a href="" class="manufacturer-name">Kerama Marazzi</a>
+                </div>
+                <div class="tile_collection__item2">
+                    <img src="images/vestanvind.jpg" alt="">
+                    <a href="" class="collection-name">Вестанвинд </a>
+                    <a href="" class="manufacturer-name">LB-Ceramics</a>
+                </div>
+                <div class="tile_collection__item3">
+                    <img src="images/rottendam.jpg" alt="">
+                    <a href="" class="collection-name">Rotterdam</a>
+                    <a href="" class="manufacturer-name">Gracia Ceramica</a>
+                </div>
+                <div class="tile_collection__item4">
+                    <img src="images/rane.jpg" alt="">
+                    <a href="" class="collection-name">Rane</a>
+                    <a href="" class="manufacturer-name">Alma Ceramica</a>
+                </div>
+                <div class="tile_collection__item5">
+                    <img src="images/ginardo.jpg" alt="">
+                    <a href="" class="collection-name">Гинардо</a>
+                    <a href="" class="manufacturer-name">Kerama Marazzi</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.promotion__slider').slick(
+            
+          );
+        });
+      </script>
+
 </body>
 </html>
