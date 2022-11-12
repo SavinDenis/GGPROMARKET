@@ -16,6 +16,11 @@ body{
 h1,h2,h3,h4,h5,h6,p{
     padding: 0;
     margin: 0;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 a{
@@ -344,10 +349,12 @@ padding-right: 40px ;
 
 
 
-.section__two__title {
+.section__two__title,
+.section__hits__title {
     max-width: max-content;
 }
-.section__two__title-text {
+.section__two__title-text,
+.section__hits__title-text {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -438,4 +445,80 @@ padding-right: 40px ;
 .tile_collection__item4,
 .tile_collection__item5 {
     position: relative;
+}
+
+.menu__product{
+    max-width: max-content;
+    margin-bottom: 30px;
+}
+
+.menu__product__items{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+
+}
+
+.menu__product__item {
+    padding: 6px 16px;
+    background-color: #fff;
+    color: #2B7BC6;
+    border-radius: 4px;
+    transition: all .2s ease;
+}
+
+.menu__product__item +.menu__product__item {
+    margin-left: 10px;
+}
+
+.menu__product__item:hover{
+    background-color: #3BB9B8;
+    color: #fff;
+}
+
+.product__card {
+    position: relative;
+    background-color: #fff;
+    max-width: 308px;
+    max-height: 540px;
+}
+
+.hit{
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    background-color: #FFD600;
+    padding: 3px 10px;
+}
+
+.action{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    background-color: #EA1649;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    display: none;
+}
+
+.product__stars{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 13px;
+}
+
+.product__star+.product__star {
+    margin-left: 5px;
+}
+
+.characteristics {
+    padding: 0 20px;
 }
