@@ -17,8 +17,8 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 0;
     margin: 0;
 
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
@@ -32,12 +32,19 @@ a{
 
 li{
     list-style-type: none;
+
 }
 
 ul{
     padding-inline-start: 0;
     padding: 0;
     margin: 0;
+
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .header {
@@ -347,14 +354,16 @@ padding-right: 40px ;
     margin-left: 22px;
 }
 
-
+.section_hits{}
 
 .section__two__title,
-.section__hits__title {
+.section__hits__title,
+.section__actions__title{
     max-width: max-content;
 }
 .section__two__title-text,
-.section__hits__title-text {
+.section__hits__title-text,
+.section__actions__title-text {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -447,6 +456,21 @@ padding-right: 40px ;
     position: relative;
 }
 
+
+.section_hits,
+.section_actions {
+    padding-bottom: 40px;
+
+}
+
+.slider__product{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+   grid-template-rows: auto;
+   gap: 2px;
+    
+}
+
 .menu__product{
     max-width: max-content;
     margin-bottom: 30px;
@@ -480,8 +504,14 @@ padding-right: 40px ;
 .product__card {
     position: relative;
     background-color: #fff;
-    max-width: 308px;
     max-height: 540px;
+    
+}
+
+.product__card__img {
+    margin: 0 auto;
+    max-width: 288px;
+    margin-bottom: 21px;
 }
 
 .hit{
@@ -515,10 +545,49 @@ padding-right: 40px ;
     margin-bottom: 13px;
 }
 
-.product__star+.product__star {
+.product__star {
     margin-left: 5px;
+   
 }
 
-.characteristics {
+.characteristics,
+.country {
     padding: 0 20px;
+}
+
+.country {
+    margin-top: 35px;
+    margin-bottom: 13px;
+}
+.price__cart{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 0px 20px 50px 20px;
+}
+
+.cost{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    
+    
+}
+
+.button__cart{
+    border: 1px solid #2B7BC6;
+    border-radius: 4px;
+    padding: 6px 12px;
+    background-color: #fff;
+    color: #2B7BC6;
+    text-align: center;
+}
+
+.button__cart:hover{
+    cursor: pointer;
+}
+
+.section_actions {
+padding-top: 57px;
+background-color: #E1EEFB;
 }
