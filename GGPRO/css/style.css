@@ -66,7 +66,8 @@ ul{
     margin-left: 150px;
 }
 
-.header__tel {
+.header__tel,
+.info__tel {
     font-size: 21px;
     line-height: 26px;
     color: #000;
@@ -651,5 +652,35 @@ background-color: #E1EEFB;
 .info__copiright__text, 
 .copiright__text__link {
     color: #99A3A9;
+}
+
+.info__list__apoint{
+    margin-bottom: 50px;
+}
+
+.callback{
+    border: 1px solid var(--color-1);
+    border-radius: 4px;
+    padding: 6px 13px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;  
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    
+}
+
+.social{
+    padding-top: 35px;
+}
+
+.social_img +.social_img{
+    margin-left: 30px;
+}
+
+.info__list__time{
+    margin-bottom: 10px;
 }
 

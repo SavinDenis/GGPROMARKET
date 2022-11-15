@@ -676,14 +676,52 @@
                     </ul>
                 </div>
                 <div class="info__inner__items">
-                    <a href="tel:84950183210" class="header__tel">8 495 018-32-10</a>
+                    
+                    <ul class="info__list__apoint">
+                        <li class="info__list"><a class="info__tel" href="tel:84950183210" >8 495 018-32-10</a></li>
+                        <!-- ОКНО ОБРАТНОГО ЗВОНКА -->
+                        <li class="info__list"><a class="callback categories" title="Заказать звонок" href="javascript:;" onclick="openchat();">
+                        Заказать звонок  
+                        </a>
+                        </li>
+                    
+                        <li class="info__list__time" >Пн-Пт: 10:00 — 20:00</li> 
+                        <li class="info__list__time">Сб: 10:00 — 18:00</li>
+                        <li class="info__list__time">Вс: выходной</li>
+                    </ul>
+
+                    <div class="social">
+                        <img class="social_img"src="images/Whatsapp.svg" alt="">
+                        <img class="social_img"src="images/instagramm.svg" alt="">
+                        <img class="social_img"src="images/telegramm.svg" alt="">
+                    </div>
+                   
+                    
+                    
+
+
+
 
                 </div>
-                <div class="info__inner__items"></div>
+                <div class="info__inner__items">
+                    <ul>
+                        <li class="info__list__time">Склад:</li>
+                        <li class="info__list__time">Москва, ул. Салтыковская, 6 стр 11</li>
+                        <li class="info__list__time"><a href="mailto:">zakaz@ggpromarket.ru</a> </li>
+                    </ul>
+
+
+
+                   
+                    </div>
+                </div>
             </div>
 
         </div>
      </section>
+
+
+
 
 
     
@@ -695,8 +733,14 @@
 
 
 
-
-
+<!-- скрипт кнопки -->
+     <script type="text/javascript">    
+        function openchat(){new _uWnd('chat','ЗАКЗАЗАТЬ ЗВОНОК',200,200,    
+        {align:0,shadow:0,close:1,autosize:1,maxh:500,minh:150,resize:0}, $("#chat").html() )}    
+        </script>    
+        <div style="display:none;" id="chat">  
+            форма запроса?
+        </div>
 
 
 
