@@ -386,8 +386,8 @@ ul{
 .slider__product{
     display: grid;
     grid-template-columns: repeat(5, auto);
-   grid-template-rows: auto;
-   gap: 2px;  
+    grid-template-rows: auto;
+    gap: 2px;  
 }
 
 .menu__product{
@@ -401,7 +401,7 @@ ul{
     flex-direction: row;
 }
 
-.menu__product__item {
+.menu__product__item a{
     padding: 6px 16px;
     background-color: #fff;
     color: #2B7BC6;
@@ -413,7 +413,7 @@ ul{
     margin-left: 10px;
 }
 
-.menu__product__item:hover{
+.menu__product__item a:hover{
     background-color: #3BB9B8;
     color: #fff;
 }
@@ -425,9 +425,12 @@ ul{
     
 }
 
+.product__card__inner{
+    padding: 20px 22px;
+}
+
 .product__card__img {
     margin: 0 auto;
-    max-width: 288px;
     margin-bottom: 21px;
 }
 
@@ -458,7 +461,6 @@ ul{
 .product__stars{
     display: flex;
     align-items: center;
-    padding-left: 20px;
     margin-bottom: 13px;
 }
 
@@ -468,7 +470,6 @@ ul{
 
 .characteristics,
 .country {
-    padding: 0 20px;
 }
 
 .country {
@@ -478,7 +479,6 @@ ul{
 .price__cart{
     display: flex;
     justify-content: space-between;    
-    padding: 0px 20px 50px 20px;
 }
 
 .cost{
@@ -487,6 +487,14 @@ ul{
     line-height: 30px;   
 }
 
+.cost__max{
+    text-decoration-line: line-through ;
+    color: #EA1649;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
 .button__cart{
     border: 1px solid #2B7BC6;
     border-radius: 4px;
@@ -494,10 +502,19 @@ ul{
     background-color: #fff;
     color: #2B7BC6;
     text-align: center;
+    transition: all 0.2s ease;
 }
 
 .button__cart:hover{
     cursor: pointer;
+    background-color: #2B7BC6;
+    color: #fff;
+
+
+}
+
+.button__cart a:hover{
+    color: #fff; 
 }
 
 .section_actions {
@@ -673,14 +690,30 @@ background-color: #E1EEFB;
 }
 
 .social{
-    padding-top: 35px;
+    margin-top: 90px;
 }
 
-.social_img +.social_img{
-    margin-left: 30px;
+.social_img{
+    display: inline-block;
+    margin-right: 20px;
+
 }
+
 
 .info__list__time{
     margin-bottom: 10px;
 }
+
+.footer{
+    background-color: #E1EEFB;
+}
+
+
+.footer__text{
+    color: #99A3A9;
+    line-height: 24px;
+    padding-top: 41px;
+    padding-bottom: 49px;
+}
+
 
