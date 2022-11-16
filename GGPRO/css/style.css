@@ -432,7 +432,25 @@ ul{
 .product__card__img {
     margin: 0 auto;
     margin-bottom: 21px;
+    max-width: max-content;
 }
+
+.product__card__link{
+    position: absolute;
+    top: 117px;
+    margin: 0 auto;
+    
+}
+
+.product__card__link a{
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    color: #fff;
+}
+
+
 
 .hit{
     text-transform: uppercase;
